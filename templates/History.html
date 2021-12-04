@@ -2,38 +2,44 @@
     <head>
         <meta charset="UTF-8">
         <title>Программа</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/MainPage.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css')}}">
+        <link rel="stylesheet" type="text/css" href="../Work/css/MainPage.css">
+        <link rel="stylesheet" type="text/css" href="../Work/css/fonts.css" />      
+        
     </head>
     <body style="background: #F6F7FA;" link="#25222C" alink="#25222C" vlink="#25222C">
         <div class="flex-column-container">
             <div class="flex-subcontainer" style="border-bottom:  1px groove black;">
                 <div class="flex-container_header_left" style="float: left;">
-                    <a href="../" style="text-decoration: none;">
-                        <img src="{{ url_for('static', filename='assets/images/logo.png')}}">
-                    </a>                     
+                    <a href="../Work/MainPage.html" style="text-decoration: none;">
+                        <img src="../Work/assets/images/logo.png">                       
+                    </a>
+                    <div class="textheader2">
+                        <a href="../Work/MainPage.html" style="text-decoration: none;">
+                            Рекомендованные проекты                        
+                        </a>                        
+                    </div>                      
                 </div>
                 <div class="flex-container_header_right" style="float: right;">
                     <div class="textheader2">
-                        <a href="../Search" style="text-decoration: none;">
+                        <a href="../Work/Search.html" style="text-decoration: none;">
                             Поиск 
-                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
+                        <img src="../Work/assets/images/Search.png">
                         </a>                        
                     </div>
                     <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <div class="textheader2">Самыйлов Михаил Юрьевич</div>
+                        <div class="textheader2">Самыйлов Михаил Юрьевич</div>                                        
                     </a>
                     <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="{{ url_for('static', filename='assets/images_profile/Person.png')}}" style="width: 65px; margin-right: 1%;">
+                        <img src="../Work/assets/images_profile/Person.png" style="width: 65px; margin-right: 1%;">                                        
                     </a>
                     <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="{{ url_for('static', filename='assets/images/MenuSign.png')}}">
-                    </a>
+                        <img src="../Work/assets/images/MenuSign.png">                                        
+                    </a> 
                 </div>
             </div> 
             <div class="flex-container" style="margin-top: 10px; margin-bottom: 10px; margin-left: 3%;">
                 <div class="textbig">
-                    Рекомендованные проекты:
+                    Последние просмотренные продукты:
                 </div>
             </div>
             <div class="flex-container" style="margin-top: 20px; margin-left: 3%;">
@@ -41,15 +47,17 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
+                                <img src="../Work/assets/images/Example.png" width="148">                          
                                 
                             </div>
                             <div class="flex-column-nostretch">
                             <div class="flex-container">
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
-                                </div>
-                                <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
+                                </div>                                
+                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
+                                    <img src="../Work/assets/images/Info.png">                       
+                                </a> 
                             </div>
                             <div class="text_other_info">
                                 Наименование команды/организации
@@ -78,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="flex-column-nostretch">
-                                <img src="{{ url_for('static', filename='assets/images/Stage1.png')}}">
+                                <img src="../Work/assets/images/Stage1.png">
                             </div>
                         </div>                        
                     </div>                
@@ -87,7 +95,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
+                                <img src="../Work/assets/images/Example.png" width="148">
                                 
                                 
                             </div>
@@ -96,7 +104,9 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
+                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
+                                    <img src="../Work/assets/images/Info.png">                       
+                                </a> 
                             </div>
                             <div class="text_other_info">
                                 Наименование команды/организации
@@ -125,7 +135,7 @@
                                 </div>
                             </div>
                             <div class="flex-column-nostretch">
-                                <img src="{{ url_for('static', filename='assets/images/Stage2.png')}}">
+                                <img src="../Work/assets/images/Stage2.png">
                             </div>
                         </div>                        
                     </div>                
@@ -134,7 +144,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
+                                <img src="../Work/assets/images/Example.png" width="148">
                                 
                                 
                             </div>
@@ -143,7 +153,9 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
+                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
+                                    <img src="../Work/assets/images/Info.png">                       
+                                </a> 
                             </div>
                             <div class="text_other_info">
                                 Наименование команды/организации
@@ -172,7 +184,7 @@
                                 </div>
                             </div>
                             <div class="flex-column-nostretch">
-                                <img src="{{ url_for('static', filename='assets/images/Stage4.png')}}">
+                                <img src="../Work/assets/images/Stage4.png">
                             </div>
                         </div>                        
                     </div>                
@@ -183,7 +195,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
+                                <img src="../Work/assets/images/Example.png" width="148">
                                 
                                 
                             </div>
@@ -192,7 +204,9 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
+                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
+                                    <img src="../Work/assets/images/Info.png">                       
+                                </a> 
                             </div>
                             <div class="text_other_info">
                                 Наименование команды/организации
@@ -222,7 +236,7 @@
                             </div>
                             
                             <div class="flex-column-nostretch">
-                                <img src="{{ url_for('static', filename='assets/images/Stage1.png')}}">
+                                <img src="../Work/assets/images/Stage1.png">
                             </div>
                         </div>                        
                     </div>                
@@ -231,7 +245,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
+                                <img src="../Work/assets/images/Example.png" width="148">
                                 
                                 
                             </div>
@@ -240,7 +254,9 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
+                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
+                                    <img src="../Work/assets/images/Info.png">                       
+                                </a> 
                             </div>
                             <div class="text_other_info">
                                 Наименование команды/организации
@@ -270,7 +286,7 @@
                             </div>
                             
                             <div class="flex-column-nostretch">
-                                <img src="{{ url_for('static', filename='assets/images/Stage2.png')}}">
+                                <img src="../Work/assets/images/Stage2.png">
                             </div>
                         </div>                         
                     </div>                
@@ -279,7 +295,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
+                                <img src="../Work/assets/images/Example.png" width="148">
                                 
                                 
                             </div>
@@ -288,7 +304,9 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
+                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
+                                    <img src="../Work/assets/images/Info.png">                       
+                                </a> 
                             </div>
                             <div class="text_other_info">
                                 Наименование команды/организации
@@ -317,7 +335,7 @@
                                 </div>
                             </div>                            
                             <div class="flex-column-nostretch">
-                                <img src="{{ url_for('static', filename='assets/images/Stage4.png')}}">
+                                <img src="../Work/assets/images/Stage4.png">
                             </div>                            
                         </div>                         
                     </div>                
