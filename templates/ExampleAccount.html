@@ -2,34 +2,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Программа</title>
-        <link rel="stylesheet" type="text/css" href="../Work/css/ProjectExample.css">
-        <link rel="stylesheet" type="text/css" href="../Work/css/fonts.css" />      
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ProjectExample.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css')}}" />
         
     </head>
     <body style="background: #F6F7FA;" link="#25222C" alink="#25222C" vlink="#25222C">
         <div class="flex-column-container">
             <div class="flex-subcontainer" >
                 <div class="flex-container_header_left" style="float: left;">
-                    <a href="../Work/MainPage.html" style="text-decoration: none;">
-                        <img src="../Work/assets/images/logo.png">                       
+                    <a href="../" style="text-decoration: none;">
+                        <img src="{{ url_for('static', filename='assets/images/logo.png')}}">
                     </a>
                                        
                 </div>
                 <div class="flex-container_header_right" style="float: right;">
                     <div class="textheader2">
-                        <a href="../Work/Search.html" style="text-decoration: none;">
+                        <a href="../Search" style="text-decoration: none;">
                             Поиск 
-                        <img src="../Work/assets/images/Search.png">
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                         </a>                        
                     </div>
-                    <a href="../Work/ExampleAccount.html" style="text-decoration:initial;">
+                    <a href="../ExampleAccount" style="text-decoration:initial;">
                         <div class="textheader2">Самыйлов Михаил Юрьевич</div>                                        
                     </a>
-                    <a href="../Work/ExampleAccount.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images_profile/photo.png" style="width: 65px; margin-right: 1%;">                                        
+                    <a href="../ExampleAccount" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images_profile/photo.png')}}" style="width: 65px; margin-right: 1%;">
                     </a>
-                    <a href="../Work/ExampleAccount.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images/MenuSign.png">                                        
+                    <a href="../ExampleAccount" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images/MenuSign.png')}}">
                     </a> 
                 </div>
             </div> 
@@ -38,7 +38,7 @@
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42); align-self: flex-end; justify-self:flex-end;">
                     <div class="text_search_on_page" style="text-decoration: none; align-self: flex-end; justify-self:flex-end;">                         
                         <input placeholder= "Поиск по странице" class="text_search_on_page">
-                        <img src="../Work/assets/images/Search.png">                  
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                           
                     </div>  
                 </div>                 
@@ -46,7 +46,7 @@
             <div class="flex-container-bottomalign" style="margin-top: 20px; margin-left: 3%; border-bottom: 1px solid #25222C; background:#FFFFFF ;">
                 <div class="flex-container_header_left">
                     <div class="flex-column-container" style="margin-bottom: 2%;">
-                        <img src="../Work/assets/images_profile/photo.png" width="280">                
+                        <img src="{{ url_for('static', filename='assets/images_profile/photo.png')}}" width="280">
                         
                     </div>
                     <div class="flex-column-nostretch">
@@ -64,7 +64,7 @@
                         <div class="flex-container-nocenteralign" style=" align-self: center; min-width: 494px; background: #009A96; border-radius: 10px;margin-top: 2%;">
                             <div class="flex-column-container" >
                                 <div class="textbig" style=" color: #FFFFFF;   padding: 1%; align-self: center;">
-                                    <a href="../Work/AccountDetails.html" style=" color: #FFFFFF; text-decoration: #009A96;">
+                                    <a href="../AccountDetails" style=" color: #FFFFFF; text-decoration: #009A96;">
                                         Заполнить аккаунт
                                     </a> 
                                 </div>

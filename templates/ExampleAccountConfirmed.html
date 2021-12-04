@@ -2,69 +2,69 @@
     <head>
         <meta charset="UTF-8">
         <title>Программа</title>
-        <link rel="stylesheet" type="text/css" href="../Work/css/ProjectExample.css">
-        <link rel="stylesheet" type="text/css" href="../Work/css/fonts.css" />      
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ProjectExample.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css')}}" />
         
     </head>
     <body style="background: #F6F7FA;" link="#25222C" alink="#25222C" vlink="#25222C">
         <div class="flex-column-container">
             <div class="flex-subcontainer" >
                 <div class="flex-container_header_left" style="float: left;">
-                    <a href="../Work/MainPage.html" style="text-decoration: none;">
-                        <img src="../Work/assets/images/logo.png">                       
+                    <a href="../" style="text-decoration: none;">
+                        <img src="{{ url_for('static', filename='assets/images/logo.png')}}">
                     </a>
                                          
                 </div>
                 <div class="flex-container_header_right" style="float: right;">
                     <div class="textheader2">
-                        <a href="../Work/Search.html" style="text-decoration: none;">
+                        <a href="../Search" style="text-decoration: none;">
                             Поиск 
-                        <img src="../Work/assets/images/Search.png">
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                         </a>                        
                     </div>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
                         <div class="textheader2">Самыйлов Михаил Юрьевич</div>                                        
                     </a>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images_profile/Person.png" style="width: 65px; margin-right: 1%;">                                        
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images_profile/Person.png')}}" style="width: 65px; margin-right: 1%;">
                     </a>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images/MenuSign.png">                                        
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images/MenuSign.png')}}">
                     </a> 
                 </div>
             </div> 
             <div class="flex-container" style=" margin-bottom: 10px;">
                 <div class="flex-column-container" style="background: #F0F2F5; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/AccountDetails.html" style="color:#25222C; text-decoration: #F0F2F5;">
+                        <a href="../AccountDetails" style="color:#25222C; text-decoration: #F0F2F5;">
                             Настройки пользователя
                         </a>                        
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/SiteSettings.html" style="color:#25222C; text-decoration: #F0F2F5;">
+                        <a href="../SiteSettings" style="color:#25222C; text-decoration: #F0F2F5;">
                             Настройки сайта
                         </a> 
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/History.html" style="color:#25222C; text-decoration: #F0F2F5;">
+                        <a href="../History" style="color:#25222C; text-decoration: #F0F2F5;">
                             История
                         </a> 
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/Problems.html" style="color:#25222C; text-decoration: #F0F2F5;">
+                        <a href="../Problems" style="color:#25222C; text-decoration: #F0F2F5;">
                             Помощь
                         </a> 
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/Exit.html" style="color:#25222C; text-decoration: #F0F2F5;">
+                        <a href="../Exit" style="color:#25222C; text-decoration: #F0F2F5;">
                             Выход
                         </a> 
                     </div>
@@ -72,7 +72,7 @@
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_search_on_page" style="text-decoration: none;">                         
                         <input placeholder= "Поиск по странице" class="text_search_on_page">
-                        <img src="../Work/assets/images/Search.png">                  
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                           
                     </div>  
                 </div>                 
@@ -80,7 +80,7 @@
             <div class="flex-container-bottomalign" style="margin-top: 20px; margin-left: 3%; border-bottom: 1px solid #25222C; background:#FFFFFF ;">
                 <div class="flex-container_header_left">
                     <div class="flex-column-container" style="margin-bottom: 2%;">
-                        <img src="../Work/assets/images_profile/Person.png" width="280">                
+                        <img src="{{ url_for('static', filename='assets/images_profile/Person.png')}}" width="280">
                         
                     </div>
                     <div class="flex-column-nostretch">
@@ -118,7 +118,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="../Work/assets/images/Example.png" width="148">                          
+                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
                                 
                             </div>
                             <div class="flex-column-nostretch">
@@ -126,8 +126,8 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>                                
-                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
-                                    <img src="../Work/assets/images/Info.png">                       
+                                <a href="../ProjectExample " style="text-decoration: none;">
+                                    <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
                                 </a> 
                             </div>
                             <div class="text_other_info">
@@ -157,7 +157,7 @@
                                 </div>
                             </div>
                             <div class="flex-column-nostretch">
-                                <img src="../Work/assets/images/Stage1.png">
+                                <img src="{{ url_for('static', filename='assets/images/Stage1.png')}}">
                             </div>
                         </div>                        
                     </div>                
@@ -166,7 +166,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="../Work/assets/images/Example.png" width="148">
+                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
                                 
                                 
                             </div>
@@ -175,8 +175,8 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
-                                    <img src="../Work/assets/images/Info.png">                       
+                                <a href="../ProjectExample" style="text-decoration: none;">
+                                    <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
                                 </a> 
                             </div>
                             <div class="text_other_info">
@@ -206,7 +206,7 @@
                                 </div>
                             </div>
                             <div class="flex-column-nostretch">
-                                <img src="../Work/assets/images/Stage4.png">
+                                <img src="{{ url_for('static', filename='assets/images/Stage4.png')}}">
                             </div>
                         </div>                        
                     </div>                
@@ -215,7 +215,7 @@
                     <div class="flex-column-container">
                         <div class="flex-container">
                             <div class="flex-column-container">
-                                <img src="../Work/assets/images/Example.png" width="148">
+                                <img src="{{ url_for('static', filename='assets/images/Example.png')}}" width="148">
                                 
                                 
                             </div>
@@ -224,8 +224,8 @@
                                 <div class="text_project_name", style="margin-right: 20px;">
                                     Название проекта
                                 </div>
-                                <a href="../Work/ProjectExample.html" style="text-decoration: none;">
-                                    <img src="../Work/assets/images/Info.png">                       
+                                <a href="../ProjectExample" style="text-decoration: none;">
+                                    <img src="{{ url_for('static', filename='assets/images/Info.png')}}">
                                 </a> 
                             </div>
                             <div class="text_other_info">
@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                             <div class="flex-column-nostretch">
-                                <img src="../Work/assets/images/Stage1.png">
+                                <img src="{{ url_for('static', filename='assets/images/Stage1.png')}}">
                             </div>
                         </div>                        
                     </div>                

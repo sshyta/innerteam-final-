@@ -2,39 +2,39 @@
     <head>
         <meta charset="UTF-8">
         <title>Программа</title>
-        <link rel="stylesheet" type="text/css" href="../Work/css/ProjectExample.css">
-        <link rel="stylesheet" type="text/css" href="../Work/css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="../Work/css/Search.css">      
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ProjectExample.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Search.css')}}">
         
     </head>
     <body style="background: #F6F7FA;" link="#25222C" alink="#25222C" vlink="#25222C">
         <div class="flex-column-container">
             <div class="flex-subcontainer" style="border-bottom: 1px groove black;" >
                 <div class="flex-container_header_left" style="float: left;">
-                    <a href="../Work/MainPage.html" style="text-decoration: none;">
-                        <img src="../Work/assets/images/logo.png">                       
+                    <a href="../" style="text-decoration: none;">
+                        <img src="{{ url_for('static', filename='assets/images/logo.png')}}">
                     </a>
                     <div class="textheader2">
-                        <a href="../Work/MainPage.html" style="text-decoration: none;">
+                        <a href="../" style="text-decoration: none;">
                             Рекомендованные проекты                        
                         </a>                        
                     </div>                     
                 </div>
                 <div class="flex-container_header_right" style="float: right;">
                     <div class="textheader2">
-                        <a href="../Work/Search.html" style="text-decoration: none;">
+                        <a href="../Search" style="text-decoration: none;">
                             Поиск 
-                        <img src="../Work/assets/images/Search.png">
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                         </a>                        
                     </div>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
                         <div class="textheader2">Самыйлов Михаил Юрьевич</div>                                        
                     </a>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images_profile/Person.png" style="width: 65px; margin-right: 1%;">                                        
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images_profile/Person.png')}}" style="width: 65px; margin-right: 1%;">
                     </a>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images/MenuSign.png">                                        
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images/MenuSign.png')}}">
                     </a> 
                 </div>
             </div>

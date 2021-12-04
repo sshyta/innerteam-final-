@@ -2,17 +2,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Программа</title>
-        <link rel="stylesheet" type="text/css" href="../Work/css/ProjectExample.css">
-        <link rel="stylesheet" type="text/css" href="../Work/css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="../Work/css/Search.css">      
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ProjectExample.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Search.css')}}.">
         
     </head>
     <body style="background: #F6F7FA;" link="#25222C" alink="#25222C" vlink="#25222C">
         <div class="flex-column-container">
             <div class="flex-subcontainer" style="border-bottom: 1px groove black;" >
                 <div class="flex-container_header_left" style="float: left;">
-                    <a href="../Work/Login.html" style="text-decoration: none;">
-                        <img src="../Work/assets/images/logo.png">                       
+                    <a href="../Login" style="text-decoration: none;">
+                        <img src="{{ url_for('static', filename='assets/images/logo.png')}}">
                     </a>
                                          
                 </div>
@@ -33,7 +33,7 @@
                     <div class="flex-container-nocenteralign" style=" align-self: center; min-width: 494px; background: #009A96; border-radius: 10px;">
                         <div class="flex-column-container" >
                             <div class="textbig" style=" color: #FFFFFF;   padding: 1%; align-self: center;">
-                                <a href="../Work/ExampleAccount.html" style=" color: #FFFFFF; text-decoration: #009A96;">
+                                <a href="../ExampleAccount" style=" color: #FFFFFF; text-decoration: #009A96;">
                                     Войти
                                 </a>
                             </div>
@@ -43,12 +43,12 @@
                         
                     </div>
                     <div class="text_search_on_page", style="border-bottom: 1px groove #009A96; color: #009A96; align-self: center; margin-top: 2%;">
-                        <a href="../Work/RequestPassLogin.html" style=" color: #009A96;; text-decoration: #FFFFFF">
+                        <a href="../RequestPassLogin" style=" color: #009A96;; text-decoration: #FFFFFF">
                             Запросить логин и пароль
                         </a>                        
                     </div>
                     <div class="text_search_on_page", style="border-bottom: 1px groove #009A96; color: #009A96; align-self: center; margin-top: 2%;">
-                        <a href="../Work/RequestPassReset.html" style=" color: #009A96;; text-decoration: #FFFFFF">
+                        <a href="../RequestPassReset" style=" color: #009A96;; text-decoration: #FFFFFF">
                             Забыли пароль?
                         </a> 
                         

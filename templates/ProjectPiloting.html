@@ -2,66 +2,66 @@
     <head>
         <meta charset="UTF-8">
         <title>Программа</title>
-        <link rel="stylesheet" type="text/css" href="../Work/css/ProjectExample.css">
-        <link rel="stylesheet" type="text/css" href="../Work/css/fonts.css" />      
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ProjectExample.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css')}}" />
         
     </head>
     <body style="background: #F6F7FA;" link="#25222C" alink="#25222C" vlink="#25222C">
         <div class="flex-column-container">
             <div class="flex-subcontainer" >
                 <div class="flex-container_header_left" style="float: left;">
-                    <a href="../Work/MainPage.html" style="text-decoration: none;">
-                        <img src="../Work/assets/images/logo.png">                       
+                    <a href="../" style="text-decoration: none;">
+                        <img src="{{ url_for('static', filename='assets/images/logo.png')}}">
                     </a>
                     <div class="textheader2">
-                        <a href="../Work/MainPage.html" style="text-decoration: none;">
+                        <a href="../" style="text-decoration: none;">
                             Рекомендованные проекты                        
                         </a>                        
                     </div>                     
                 </div>
                 <div class="flex-container_header_right" style="float: right;">
                     <div class="textheader2">
-                        <a href="../Work/Search.html" style="text-decoration: none;">
+                        <a href="../Search" style="text-decoration: none;">
                             Поиск 
-                        <img src="../Work/assets/images/Search.png">
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                         </a>                        
                     </div>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
                         <div class="textheader2">Самыйлов Михаил Юрьевич</div>                                        
                     </a>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images_profile/Person.png" style="width: 65px; margin-right: 1%;">                                        
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images_profile/Person.png')}}" style="width: 65px; margin-right: 1%;">
                     </a>
-                    <a href="../Work/ExampleAccountConfirmed.html" style="text-decoration:initial;">
-                        <img src="../Work/assets/images/MenuSign.png">                                        
+                    <a href="../ExampleAccountConfirmed" style="text-decoration:initial;">
+                        <img src="{{ url_for('static', filename='assets/images/MenuSign.png')}}">
                     </a> 
                 </div>
             </div> 
             <div class="flex-container" style=" margin-bottom: 10px;">
                 <div class="flex-column-container" style="background: #F0F2F5; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/ProjectExample.html" style="text-decoration:initial;">
+                        <a href="../ProjectExample" style="text-decoration:initial;">
                             Заявка                                    
                         </a>                         
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42), inset 0px 2px 4px rgba(0, 0, 0, 0.25);">
                     <div class="text_proj_header">
-                        <a href="../Work/ProjectCard.html" style="text-decoration:initial;">
+                        <a href="../ProjectCard" style="text-decoration:initial;">
                             Карточка проекта                                   
                         </a>
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/ProjectPiloting.html" style="text-decoration:initial;">
+                        <a href="../ProjectPiloting" style="text-decoration:initial;">
                             Отчет о результатах пилотирования                                   
                         </a>
                     </div>
                 </div>
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_proj_header">
-                        <a href="../Work/ProjectAskInnov.html" style="text-decoration:initial;">
+                        <a href="../ProjectAskInnov" style="text-decoration:initial;">
                             Паспорт запроса на инновацию                                   
                         </a>
                     </div>
@@ -69,7 +69,7 @@
                 <div class="flex-column-container" style="background: #F6F7FA; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.42);">
                     <div class="text_search_on_page" style="text-decoration: none;">                         
                         <input placeholder= "Поиск по странице" class="text_search_on_page">
-                        <img src="../Work/assets/images/Search.png">                  
+                        <img src="{{ url_for('static', filename='assets/images/Search.png')}}">
                           
                     </div>  
                 </div>                 
@@ -77,8 +77,8 @@
             <div class="flex-container-bottomalign" style="margin-top: 20px; margin-left: 3%; border-bottom: 1px solid #25222C; background:#FFFFFF ;">
                 <div class="flex-container_header_left">
                     <div class="flex-column-container" style="margin-bottom: 2%;">
-                        <a href="../Work/Organization.html" style="text-decoration:initial;">
-                            <img src="../Work/assets/images_example/Company_logo.png" width="280">                                    
+                        <a href="../Organization" style="text-decoration:initial;">
+                            <img src="{{ url_for('static', filename='assets/images_example/Company_logo.png')}}" width="280">
                         </a>                 
                         
                     </div>
@@ -128,7 +128,7 @@
                 </div>                                       
             </div> 
             <div class="flex-container-allcentered" style="margin-top: 2%;">
-                <img src="../Work/assets/images_piloting/PDF Viewer.png"> 
+                <img src="{{ url_for('static', filename='assets/images_piloting/PDF Viewer.png')}}">
 
             </div>                   
         
